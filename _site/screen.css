@@ -16,39 +16,56 @@ h1 {
   text-align: left;
   margin-bottom: 20px;
   color: rgb(224, 224, 224);
+  font-size: 3em;
 } 
 
 p { 
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.2;
   margin-bottom: 20px;
   color: rgb(224, 224, 224);
   text-align: left;
 }
 
+.earth-img, .moon-img {
+  border: 15px solid transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 25px; 
+}
 
-.link-ref {
+.earth-html .earth-img {
+  border: 10px solid white;
+}
+
+.moon-html .moon-img {
+  border: 10px solid white;
+}
+
+.moon-ref, .earth-ref, .moon-ref1, .earth-ref1 {
   display: inline-block;
   position: relative;
 }
 
-.earth-img, .moon-img {
+.earth-img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  display: inline-block;
-  margin: 50px;
-  border: 3px solid white;
-  border-radius: 10%;
+  margin: 40px;
+  margin-right: 60px;
+  border-radius: 50%;
 }
 
-.earth-img::after, .moon-img::after {
-  position: absolute;
-  width: calc(100% + 30px);
-  height: calc(100% + 30px);
-  border: 2px solid white;
-  border-radius: 10%;
-  box-sizing: border-box;
+.moon-img {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 40px;
+  margin-bottom: 80px;
+  margin-left: 60px;
+  border-radius: 50%;
 }
 
 .earth-img {
@@ -63,5 +80,5 @@ p {
   height: 100px;
   background-image: url('/Ellipse1.png');
   transform: scale(0.6);
-  padding: 50px 0;
+  
 }
